@@ -11,9 +11,10 @@ Empaquetage de l'application ['Leed'](https://github.com/LeedRSS/Leed.git) grâc
 une connexion internet pour que l'image puisse récupéré le projet git.
 
 ## Installation
-
-git clone XXX  
-cd XXX
+```shell
+git clone git@gricad-gitlab.univ-grenoble-alpes.fr:iut2-info-stud/2024-s5/r5-adv-virt/a1/leed-calpetaq.git
+cd leed-calpetaq/
+```
 
 ### Mise en place
 
