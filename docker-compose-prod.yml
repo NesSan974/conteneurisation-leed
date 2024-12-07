@@ -19,8 +19,6 @@ services:
       - ./bdd-volume:/var/lib/mysql
       networks:
       - leednetwork
-      ports : 
-      - ${BDD_PORT}:3306
 networks:
   leednetwork:
     name: leednetwork
