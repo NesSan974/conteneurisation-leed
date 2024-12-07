@@ -1,0 +1,51 @@
+# Leed en micro-service
+
+Virtualisation Avancé 
+Empaquetage de l'application ['Leed'](https://github.com/LeedRSS/Leed.git) grâce à docker.  
+
+## Pré-requis
+
+- Docker `sudo apt install docker`
+- docker-compose `sudo apt install docker-compose`
+
+une connexion internet pour que l'image puisse récupéré le projet git.
+
+## Installation
+
+git clone XXX  
+cd XXX
+
+### Mise en place
+
+#### Docker
+
+Créer l'image docker
+```shell
+docker build . -t webleed
+```
+Afin de pouvoir conserver les données, il faut créer le dossier :
+```shell
+mkdir bdd-volume
+```
+
+#### variable d'environnement
+
+renommer le fichier bdd.env.example
+```shell
+mv .env.example .env
+```
+et le **compléter**.  
+
+Il est possible de modifier :
+- les ports exposé grace aux variables `WEB_PORT` et `BDD_PORT`
+- le nom de la base de donnée
+- le mot de passe de la base de donnée
+
+## Lancement 
+
+```shell
+docker-compose -f docker-compose-prod.yml
+```
+
+Le site est maintenant disponible au http://localhost sur le port choisis dans le fichier '.env'  
+(par defaut : [localhost:8080](http://localhost:8080) )
