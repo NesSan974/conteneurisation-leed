@@ -45,3 +45,12 @@ docker-compose -f docker-compose-prod.yml up
 
 L'appli est maintenant disponible au http://localhost sur le port choisis dans le fichier '.env'  
 (par defaut : [localhost:8080](http://localhost:8080) )
+
+Afin de le paramétrer correfctement, entrer : 
+
+- Hote : bdd
+- Identifiant : root
+- Mot de passe : {mot de passe du fichier .env}
+- Base : {nom de la base du fichier .env}
+
+Puis créer un compte Administrateur
