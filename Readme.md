@@ -40,13 +40,22 @@ Il est possible de modifier :
 ## Lancement 
 
 ```shell
-docker-compose -f docker-compose-prod.yml up
+docker-compose -f docker-compose-prod.yml up -d
 ```
 
 L'appli est maintenant disponible au http://localhost sur le port choisis dans le fichier '.env'  
 (par defaut : [localhost:8080](http://localhost:8080) )
 
-Afin de le paramétrer correfctement, entrer : 
+## Parametrage de l'application
+
+### Automatique 
+
+```shell
+chmod +x parametrageLeed.sh && ./parametrageLeed.sh
+```
+
+### Manuelle
+Afin de le paramétrer correctement, entrer : 
 
 - Hote : bdd
 - Identifiant : root
@@ -54,3 +63,9 @@ Afin de le paramétrer correfctement, entrer :
 - Base : {nom de la base du fichier .env}
 
 Puis créer un compte Administrateur
+
+### Arret
+
+```shell
+docker-compose -f docker-compose-prod.yml down
+```
