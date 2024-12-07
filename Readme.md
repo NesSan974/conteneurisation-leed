@@ -7,8 +7,7 @@ Empaquetage de l'application ['Leed'](https://github.com/LeedRSS/Leed.git) grâc
 
 - Docker `sudo apt install docker`
 - docker-compose `sudo apt install docker-compose`
-
-une connexion internet pour que l'image puisse récupéré le projet git.
+- une connexion internet pour que l'image puisse récupérer le projet git.
 
 ## Installation
 ```shell
@@ -20,10 +19,6 @@ cd leed-calpetaq/
 
 #### Docker
 
-Créer l'image docker
-```shell
-docker build . -t webleed
-```
 Afin de pouvoir conserver les données, il faut créer le dossier :
 ```shell
 mkdir bdd-volume
@@ -48,5 +43,5 @@ Il est possible de modifier :
 docker-compose -f docker-compose-prod.yml
 ```
 
-Le site est maintenant disponible au http://localhost sur le port choisis dans le fichier '.env'  
+L'appli est maintenant disponible au http://localhost sur le port choisis dans le fichier '.env'  
 (par defaut : [localhost:8080](http://localhost:8080) )
