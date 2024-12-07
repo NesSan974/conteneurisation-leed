@@ -28,7 +28,7 @@ mkdir bdd-volume
 
 renommer le fichier bdd.env.example
 ```shell
-mv .env.example .env
+cp .env.example .env
 ```
 et le **compléter**.  
 
