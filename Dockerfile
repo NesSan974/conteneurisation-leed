@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     libjpeg-dev \
     libzip-dev \
     && docker-php-ext-configure gd --with-jpeg \
-    && docker-php-ext-install pdo pdo_mysql gd zip mysqli xdebug  \
+    && docker-php-ext-install pdo pdo_mysql gd zip mysqli  \
     && docker-php-ext-enable mysqli
 
 WORKDIR /var/www/html
