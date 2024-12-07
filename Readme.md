@@ -40,7 +40,7 @@ Il est possible de modifier :
 ## Lancement 
 
 ```shell
-docker-compose -f docker-compose-prod.yml
+docker-compose -f docker-compose-prod.yml up
 ```
 
 L'appli est maintenant disponible au http://localhost sur le port choisis dans le fichier '.env'  

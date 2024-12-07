@@ -20,4 +20,3 @@ FROM base AS production
 
 FROM base AS development 
     RUN apt install -y nano vim 
-    RUN pecl install xdebug && docker-php-ext-enable xdebug
