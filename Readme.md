@@ -1,17 +1,32 @@
-# Leed en micro-service
+# 📦 Déploiement de l'application Leed avec Docker
 
-Virtualisation Avancé 
-Empaquetage de l'application ['Leed'](https://github.com/LeedRSS/Leed.git) grâce à docker.  
+Projet universitaire réalisé dans le cadre du module **R5.Real.09**.  
+Ce projet avait pour objectif de conteneuriser l'application Leed, un agrégateur RSS minimaliste, en respectant les bonnes pratiques de déploiement avec **Docker** et **Docker Compose**.  
+consigne disponible [ici](projet-leed.pdf)
+## 🎯 Objectifs
+
+- Comprendre et appliquer les concepts de virtualisation avancée.
+- Créer un environnement de déploiement reproductible avec Docker.
+- Utiliser Docker Compose pour orchestrer les services nécessaires.
+- Suivre un cahier des charges précis pour garantir la conformité du packaging.
+
+## 🛠️ Technologies utilisées
+
+- Docker
+- Docker Compose
+- PHP / MySQL (selon les dépendances de Leed)
+- Leed (https://github.com/LeedRSS/Leed)
+
 
 ## Pré-requis
 
 - Docker `sudo apt install docker`
 - docker-compose `sudo apt install docker-compose`
-- une connexion internet pour que l'image puisse récupérer le projet git.
+- une connexion internet pour que l'image puisse récupérer le projet git de [Leed](https://github.com/LeedRSS/Leed).
 
 ## Installation
 ```shell
-git clone git@gricad-gitlab.univ-grenoble-alpes.fr:iut2-info-stud/2024-s5/r5-adv-virt/a1/leed-calpetaq.git
+git clone XXX
 cd leed-calpetaq/
 ```
 
@@ -37,7 +52,7 @@ Il est possible de modifier :
 - le nom de la base de donnée
 - le mot de passe de la base de donnée
 
-## Lancement 
+## Lancement
 
 ```shell
 docker-compose -f docker-compose-prod.yml up -d
@@ -69,3 +84,9 @@ Puis créer un compte Administrateur
 ```shell
 docker-compose -f docker-compose-prod.yml down
 ```
+
+
+## 🧑‍🎓 Auteur
+Quentin Calpetard  
+Étudiant en 3e année de [BUT Informatique, Parcours Réalisation d'applications : conception, développement, validation](https://formations.univ-grenoble-alpes.fr/fr/catalogue-2021/but-bachelor-universitaire-de-technologie-BUT/but-informatique-grenoble-KI4UEV4Y/parcours-realisation-d-applications-conception-developpement-validation-KI4UEV90.html)    
+à l'IUT 2 de l'[UGA](https://www.univ-grenoble-alpes.fr/)
